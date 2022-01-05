@@ -55,7 +55,7 @@ nav li a.active {
     color: #7C5988;
 
 }
-
+/* Page bio */
 /* REctangle  */
 .rectangle {
     margin-left: auto;
@@ -140,6 +140,28 @@ h2 {
     color: #fff;
 }
 
+/* Page Diplome */
+
+.mr-dip{
+    
+margin-top: 40px;
+padding-bottom: 30px ;
+--bs-gutter-x: 0rem;
+}
+
+/* Page competence */
+
+.mr-bar{
+    width: 70%;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+.progress-bar{
+    background-color: #7C5988;
+}
 
 /* Media queries */
 
@@ -164,7 +186,12 @@ h2 {
         text-decoration: none;
     }
     nav li a:hover {
-        color: #122C34;
+        color: #fff;
+    }
+    nav li a.active {
+        text-decoration: underline;
+        color: #fff;
+    
     }
 
     .rectangle {
@@ -192,4 +219,10 @@ h2 {
         top: 527px;
     }
 
+    .mr-dip{
+        margin-top: 0px;
+        row-gap: 10px;
+        padding-bottom: 10px ;
+        }
+ 
 }
