@@ -1,17 +1,195 @@
-html{
+/* Base html */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 
 
-body{
+body {
     background-color: #122C34;
-   color: #fff;
+
+    background-image: url(../img/background.png);
+    background-size: cover;
 }
-.navbar{
+
+/* navbar haut CV */
+.navbar {
     background-color: #18181B;
     font-family: Helvetica;
 }
 
-main{
-    background-image: url(assets\img\background.png);
+/* Nav bar twitch */
+
+nav ul {
+    list-style-type: none;
+    margin-left: 300px;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav li {
+    float: inline-start;
+}
+
+nav li a {
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #7C5988;
+}
+
+nav li a.active {
+    text-decoration: underline;
+    color: #7C5988;
+
+}
+
+/* REctangle  */
+.rectangle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    height: 240px;
+    background: #18181B;
+}
+
+h2 {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.information ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.reseau {
+
+    padding-top: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.reseau a {
+    text-decoration: none;
+    color: #7C5988;
+}
+
+.reseau a:hover {
+    color: #fff;
+}
+
+/* modal */
+.button-contact {
+    background-color: #bfc0c0;
+    position: absolute;
+    right: 447px;
+    top: 168px;
+}
+.modal{
+    color: #fff;
+    border: none;
+    
+}
+.modal-dialog{
+    margin: auto;
+}
+.mr-modal-dialog{
+    margin-top:283px ;
+    margin-right: 10px;
+
+}
+.modal-body{
+    background-color: #18181B;
+    height: 250px;
+}
+.modal-header{
+    background-color: #1F1F23;
+    border: none;
+}
+.modal-footer input{
+    background-color: #3C3C3F;
+    border: none;
+    color: #fff;
+}
+.modal-footer{
+    background-color: #1F1F23;
+    border: none;
+}
+
+.btn-close{
+    background-color: #fff;
+}
+.fa-smile {
+    color: #fff;
+}
+.fa-arrow-right{
+    color: #fff;
+}
+
+
+/* Media queries */
+
+@media (max-width: 756px) {
+
+    nav ul {
+        list-style-type: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        font-size: 1.5rem;
+        display: block;
+        text-decoration: none;
+    }
+    nav li a:hover {
+        color: #122C34;
+    }
+
+    .rectangle {
+        margin-left: auto;
+        margin-right: auto;
+        width: 370px;
+        height: 414px;
+        background: #18181B;
+    }
+
+    .reseau li {
+        float: inline-start;
+        padding-inline-start: 20px;
+    }
+
+    .reseau ul {
+
+        position: absolute;
+        bottom: -460px;
+        left: 72px;
+    }
+
+    .button-contact {
+      left: 162px;
+        top: 527px;
+    }
+
 }
