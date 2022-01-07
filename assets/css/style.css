@@ -16,7 +16,14 @@ body {
     background-color: #122C34;
 
     background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
     background-size: cover;
+   
+}
+
+.mr-row{
+    flex-wrap: nowrap;
 }
 
 /* navbar haut CV */
@@ -24,6 +31,8 @@ body {
     background-color: #18181B;
     font-family: Helvetica;
 }
+
+
 
 /* Nav bar twitch */
 
@@ -59,6 +68,10 @@ nav li a.active {
 }
 
 /* Page bio */
+.mr-img{
+    width: 70%;
+}
+
 /* REctangle  */
 .rectangle {
     margin-left: auto;
@@ -98,9 +111,10 @@ h2 {
 /* modal */
 .button-contact {
     background-color: #bfc0c0;
-    position: absolute;
-    right: 447px;
-    top: 168px;
+   float: right;
+  width: 30%;
+
+   
 }
 
 .modal {
@@ -162,6 +176,10 @@ h2 {
 }
 
 /* Page competence */
+.mr-compe{
+    margin-bottom: 50px;
+}
+
 
 .mr-bar {
     width: 70%;
@@ -176,14 +194,83 @@ h2 {
 }
 
 .mr-photo {
-    width: 126px;
+    width: 89px;
+    margin-top: 14px;
+}
+
+.mr-premier{
+    width: 89px;
+    margin-top: 14px;
+}
+
+.mr-anglais{
+    margin-top: 14px;
 }
 
 
 
 /* loisir */
-.imgjapon {
-    width: 50%;
+
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover {
+    height: 400px
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px
+    }
+}
+
+
+
+
+
+ .imgjapon {
+    width: 23%;
+    margin-top: 13px;
 }
 
 
@@ -211,43 +298,28 @@ h2 {
     color: #387ac5;
 }
 
-.box-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10%;
-}
-
-.box {
-    padding: 30px;
-    margin: 2%;
-    background: black;
-    width: 30%;
-    border: 1px solid #d6d6d6;
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    transition: .2s all;
-}
-
-.box-wrap:hover .box {
-    filter: blur(3px);
-    opacity: .5;
-    transform: scale(.98);
-    box-shadow: none;
-}
-
-.box-wrap:hover .box:hover {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-}
-
 
 
 /* Media queries */
 
 @media (max-width: 756px) {
+
+    .mr-img{
+      margin-left: 14%;
+
+    }
+
+    .mr-h2{
+        margin-left: 0px;
+       text-align: center;
+    }
+    .button-contact {
+        background-color: #bfc0c0;
+       float:inline-start;
+      width: 50%;
+    
+       
+    }
 
     nav ul {
         list-style-type: none;
@@ -301,6 +373,10 @@ h2 {
     .button-contact {
         left: 162px;
         top: 527px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+   
     }
 
     .mr-dip {
@@ -360,14 +436,22 @@ h2 {
     }
 
     .mr-photo {
-        width: 86px;
+        width: 64px;
+        margin-top: 16px;
     }
 
     .mr-premier {
-        width: 90px;
+        width: 64px;
+        margin-top: 16px;
     }
 
     .mr-anglais {
         width: 74px;
+        margin-top: 16px;
+    }
+
+    .mr-bar {
+        width: 70%;
+        margin-left: 20px;
     }
 }

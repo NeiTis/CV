@@ -10,31 +10,33 @@
 </head>
 
 <body>
-<!-- modal -->
-<div class="modal " id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false" >
-  <div class="modal-dialog mr-modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Contactez-moi</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Pour toute demande veuillez écrire ici.</label>
-           
-          </div>
-         
-        </form>
-      </div>
-      <div class="modal-footer">
-        <input type="text" class="form-control" id="recipient-name">
-        <button type="button" class="btn "><i class="far fa-smile"></i></button>
-        <button type="button" class="btn "><i class="fas fa-arrow-right"></i></button>
-      </div>
-    </div>
-  </div>
-</div>
+
+   <!-- modal -->
+   <div class="modal " id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true"
+   data-bs-backdrop="false">
+   <div class="modal-dialog mr-modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Contactez-moi</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <form>
+           <div class="mb-3">
+             <label for="recipient-name" class="col-form-label">Pour toute demande veuillez écrire ici.</label>
+
+           </div>
+
+         </form>
+       </div>
+       <div class="modal-footer">
+         <input type="text" class="form-control" id="recipient-name">
+         <button type="button" class="btn "><i class="far fa-smile"></i></button>
+         <button type="button" class="btn "><i class="fas fa-arrow-right"></i></button>
+       </div>
+     </div>
+   </div>
+ </div>
 
   <nav class="navbar ">
     <div class="container-fluid">
@@ -43,27 +45,24 @@
   </nav>
 
   <main>
-    <!-- photo et info -->
-    <div class="container ">
-      <div class="m-5" style="max-width: 600px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets\img\pdp.jpg" class="img-fluid rounded-circle" alt="photo de profil">          </div>
-          <!-- info moi -->
-          <div class="col-md-8 ">
-            <div class="card-body fs-3 my-4 text-light">
-              <h1 class="card-title  text-md-center ">RIMBAUT Matthias</h1>
-              <p class="card-text text-md-center">Concepteur Designer UI</p>
-              <!-- button modal -->
-              <button type="button" class="btn button-contact" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-bs-whatever="contact">Demande de contact</button>
-            </div>
-
-
-
-
-          </div>
+    <div class="container mt-5 ">
+      <div class="row  " style="max-width: 900px;">
+        <div class="col-md-4">
+          <img src="assets\img\pdp.jpg" class="img-thumbnail rounded-circle mr-img " alt="photo de profil">
         </div>
+        <div class="col flex-col align-self-center  col-md-8 ">
+          <div class="card-body px-2 fs-3 my-4 text-light ">
+            <h2 class="card-title mr-h2 ">RIMBAUT Matthias </h2>
+            <button type="button" class="btn button-contact d-none d-xxl-block" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="contact">Demande de contact</button>
+            <p class="card-text mr-h2">Concepteur Designer UI</p>
+
+            <button type="button" class="btn button-contact d-xxl-none mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="contact">Demande de contact</button>
+          </div>
+
+        </div>
+
       </div>
     </div>
 <!-- barre twitch -->
